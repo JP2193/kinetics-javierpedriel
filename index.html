@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/fav-icon.png">
     <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="js/wow.min.js"></script>
 
 
     <title>Inicio</title>
@@ -18,7 +20,7 @@
     <!-- HEADER -->
     <header>
         <div class="header">
-            <div class="contenido-header">
+            <div class="contenido-header animate__animated animate__fadeIn wow">
                 <div class="contenedor-header">
                     <a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
                     <nav class="navegador">
@@ -49,20 +51,20 @@
     <main>
 
 
-        <section class="servicios">
+        <section class="servicios  animate__animated animate__fadeIn wow">
 
             <h2 class="titulo ">Servicios</h2>
             <div class="linea"></div>
 
             <ul class="lista-servicios">
-                <li><a href=""><i class="fa-solid fa-user-doctor"></i><span>Fisioterapia</span></a></li>
-                <li><a href=""><i class="fa-solid fa-user-doctor"></i><span>RPG</span></a></li>
-                <li><a href=""><i class="fa-solid fa-user-doctor"></i><span>Rehabilitacion Vestibular</span></a></li>
-                <li><a href=""><i class="fa-solid fa-user-doctor"></i><span>Trumatologia</span></a></li>
+                <li class="animate__animated animate__bounceIn wow"><a href=""><i class="fa-solid fa-user-doctor"></i><span>Fisioterapia</span></a></li>
+                <li class="animate__animated animate__bounceIn wow"><a href=""><i class="fa-solid fa-user-doctor"></i><span>RPG</span></a></li>
+                <li class="animate__animated animate__bounceIn wow"><a href=""><i class="fa-solid fa-user-doctor"></i><span>Rehabilitacion Vestibular</span></a></li>
+                <li class="animate__animated animate__bounceIn wow"><a href=""><i class="fa-solid fa-user-doctor"></i><span>Trumatologia</span></a></li>
             </ul>
         </section>
 
-        <section class="sedes">
+        <section class="sedes  animate__animated animate__fadeIn wow">
             <h2 class="titulo">Sedes</h2>
             <div class="linea"></div>
 
@@ -86,18 +88,18 @@
 
         </section>
 
-        <section class="prestadores">
+        <section class="prestadores  animate__animated animate__fadeIn wow">
             <h2 class="titulo">Prestadores</h2>
             <div class="linea"></div>
 
             <div class="contenedor-prestadores">
                 <ul class="prestadores-img">
-                    <li><img src="./img/logo-galeno.svg" alt=""></li>
-                    <li><img src="./img/logo-osde.svg" alt=""></li>
-                    <li><img src="./img/logo-medicus.svg" alt=""></li>
-                    <li><img src="./img/logo-medife.svg" alt=""></li>
-                    <li><img src="./img/logo-omint3.svg" alt=""></li>
-                    <li><img src="./img/logo-swiss.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-galeno.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-osde.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-medicus.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-medife.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-omint3.svg" alt=""></li>
+                    <li class="animate__animated animate__zoomIn wow"><img src="./img/logo-swiss.svg" alt=""></li>
                 </ul>
             </div>
         </section>
@@ -119,7 +121,9 @@
         </div>
     </footer>
 
-
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
