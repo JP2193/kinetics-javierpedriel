@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/fav-icon.png">
-    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="js/wow.min.js"></script>
+
+
+    <title>Inicio</title>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
         <div class="header-alt">
             <div class="contenido-header">
                 <div class="contenedor-header">
-                    <a href="./index.html"><img src="./img/logo.png" alt="error" class="logo"></a>
+                    <a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
                     <nav class="navegador">
                         <ul class="menu">
                             <li><a href="./index.html">Inicio</a></li>
@@ -27,57 +32,68 @@
                             <li><a href="./contacto.html">Contacto</a></li>
                         </ul>
                     </nav>
-                </div>
-            </div>
-            <div class="nombre-inicio">
-                <div class="titulo-inicio">
-                    <h1 class="">Contacto</h1>
 
                 </div>
+
             </div>
+
         </div>
+
+
     </header>
 
     <!-- MAIN CONTENT -->
-    <main>
-        <div class="formulario">
-            <form action="#" method="get" class="contenido-formulario">
-                <h2>Contacto</h2>
-                <br>
-                <label>Nombre: </label>
-                <input type="text" placeholder="Juan Perez" name="nombre-completo">
-                <br>
-                <br>
-                <label for="">Email: </label>
-                <input type="email" placeholder="user@gmail.com">
-                <br>
-                <br>
-                <label for="">Comentarios: </label>
-                <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <br>
-                <br>
-                <input type="checkbox"> <span>Suscribirme al Newsletter</span>
-                <br>
-                <br>
-                <input type="radio" name="sexo" value="hombre" id="hombre"> <span>Hombre</span>
-                <input type="radio" name="sexo" value="mujer" id="mujer"> <span>Mujer</span>
-                <br>
-                <br>
-                <select name="servicio" id="servicio">
-                <option value="seleccion">Servicio</option>
-                <option value="op1">1</option>
-                <option value="op2">2</option>
-                <option value="op3">3</option>
-            </select>
-                <br>
-                <br>
-                <input type="submit">
-                <input type="reset" value="Borrar">
-            </form>
-        </div>
-    </main>
+    <h1 class="titulo">Contacto</h1>
 
+
+    <main class="contenedor-contacto seccion contenido-centrado">
+
+
+        <form action="" class="contacto-form">
+            <fieldset class="datos-contacto">
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Juan Perez">
+
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Juan@Perez.com" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" placeholder="11XXXXXXXX" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea cols="30" rows="10"></textarea>
+
+                <label for="opciones">Seleccione tratamiento:</label>
+                <select id="opciones">
+                    <option value="" disabled selected>------</option>
+                    <option value="">Traumatologia</option>
+                    <option value="">Kinesiologia</option>
+                    <option value="">RPG</option>
+                    <option value="">Rehabilitacion Vestibular</option>
+                </select>
+
+                <p>Como desea ser contactado:</p>
+                <div class="cuadro-opciones">
+                    <label for="telefono">Telefono</label>
+                    <input type="radio" name="contacto" value="telefono">
+
+                    <label for="correo">E-Mail</label>
+                    <input type="radio" name="contacto" value="correo">
+                </div>
+                <span>Indique fecha y hora de preferencia para contactarlo:</span>
+
+                <input type="date" name="fecha">
+
+                <input type="time" name="hora" min="9:00" max="18:00">
+            </fieldset>
+
+
+            <input type="submit" value="Enviar" class="boton boton-verde">
+        </form>
+
+
+    </main>
     <!-- FOOTER -->
     <footer class="footer footer-grilla">
         <div class="contenido-footer">

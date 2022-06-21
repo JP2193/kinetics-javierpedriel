@@ -9,11 +9,21 @@
 /* HEADER */
 
 .header {
-    background-image: url(../img/cover.jpg);
-    background-repeat: no-repeat;
+    position: relative;
     height: 100vh;
+}
+
+.header:before {
+    content: "";
+    background-image: url(../img/cover.jpg);
+    position: absolute;
     background-size: cover;
-    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .7;
 }
 
 .header-alt {
@@ -21,6 +31,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 5vw;
 }
 
 .contenedor-header {
@@ -34,6 +45,9 @@
 .contenido-header {
     background-color: rgba(243, 242, 242, 0.804);
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .contenedor-header a img {
@@ -62,34 +76,46 @@
     color: brown;
 }
 
-.contenedor-inicio {
-    width: 60%;
-    margin: 200px auto;
-}
-
-.parrafo-inicio {
+.contenido-intro {
     color: rgb(231, 228, 224);
     background-color: rgba(0, 0, 0, 0.639);
-    display: inline-block;
     padding: 50px;
-    border-radius: 5px;
-}
-
-.parrafo-inicio p {
-    margin-top: 20px;
-    font-size: 15px;
-    font-weight: 900;
-}
-
-.titulo-inicio {
-    color: rgb(231, 228, 224);
-    background-color: rgba(0, 0, 0, 0.639);
-    padding: 40px;
-    border-radius: 5px;
-}
-
-.nombre-inicio {
     text-align: center;
+}
+
+.contenido-intro {
+    font-size: 1rem;
+    padding: 60px;
+}
+
+.nombre-sitio {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0 auto;
+    font-size: 7vw;
+    padding: 50px;
+}
+
+.nombre-sitio a {
+    text-decoration: none;
+    color: #131a1f;
+}
+
+.slogan {
+    text-align: center;
+    color: rgb(29, 25, 25);
+    font-size: 3vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slogan span {
+    font-weight: bold;
+}
+
+.intro {
+    padding-top: 300px;
 }
 
 
@@ -99,7 +125,6 @@
     text-align: center;
     font-size: 5rem;
     padding: 20px;
-    margin-top: 10px;
 }
 
 .linea {
@@ -111,6 +136,7 @@
 .servicios {
     max-width: 95%;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 .lista-servicios {
@@ -182,6 +208,11 @@
 
 /* INDEX SECCION PRESTADORES*/
 
+.contenedor-prestadores {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .prestadores {
     width: 95%;
     margin: 0 auto;
@@ -189,7 +220,7 @@
 
 .prestadores-img {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 40px;
     align-items: center;
     text-align: center;
@@ -209,7 +240,8 @@
 
 .footer {
     background-color: rgba(71, 87, 129, 0.598);
-    padding: 30px;
+    padding: 40px;
+    margin-top: 40px;
 }
 
 .redes-footer {
@@ -239,14 +271,87 @@
 
 /* CONTACTO HTML */
 
-.formulario {
-    background-color: rgb(226, 226, 218);
+.contenedor-contacto {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+}
+
+.contenido-centrado {
+    max-width: 1000px;
+}
+
+legend {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+fieldset {
     padding: 20px;
 }
 
-.contenido-formulario {
-    width: 95%;
-    margin: 0 auto;
+.boton {
+    margin-top: 60px;
+    width: 20%;
+    background-color: #232f36;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.datos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.datos-contacto label,
+.datos-contacto p {
+    margin-top: 20px;
+}
+
+input[type=radio] {
+    margin-top: 20px;
+}
+
+.datos-contacto label,
+.datos-contacto p {
+    font-weight: 800;
+}
+
+input {
+    width: 50%;
+    padding: 8px;
+}
+
+.cuadro-opciones {
+    display: flex;
+    justify-content: start;
+}
+
+.cuadro-opciones input {
+    width: 5%;
+    margin-right: 20px;
+}
+
+.datos-contacto span {
+    margin-top: 20px;
+    font-style: oblique;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(240, 248, 255, 0.486);
 }
 
 
@@ -310,6 +415,18 @@
 
 .desc-servicios p {
     margin-top: 10px;
+}
+
+
+/* SECCION NOSOTROS */
+
+.contenedor-nosotros {
+    max-width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
 }
 
 
