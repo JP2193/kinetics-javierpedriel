@@ -1,0 +1,68 @@
+/* SERVICIOS */
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "header header" "aside seccion" "footer footer";
+}
+
+.header-grilla {
+    grid-area: header;
+}
+
+.servicios-grilla {
+    grid-area: seccion;
+}
+
+.contenedor-aside {
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-aside ul {
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.contenedor-aside li {
+    padding: 50px;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.contenedor-aside li:hover {
+    background-color: rgb(53, 60, 61);
+}
+
+.contenedor-aside ul li i {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.footer-grilla {
+    grid-area: footer;
+}
+
+.desc-servicios {
+    margin: 20px;
+}
+
+.desc-servicios h2 {
+    margin-bottom: 20px;
+}
+
+.desc-servicios p {
+    margin-top: 10px;
+}
+
+.instalaciones h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    padding-top: 40px;
+}
