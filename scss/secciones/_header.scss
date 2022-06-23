@@ -3,37 +3,35 @@
 .header {
     position: relative;
     height: 100vh;
-}
-
-.header:before {
-    content: "";
-    background-image: url(../img/cover.jpg);
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: .7;
+    &:before {
+        content: "";
+        background-image: url(../img/cover.jpg);
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .7;
+    }
 }
 
 .header-alt {
     position: relative;
     height: 15vh;
-}
-
-.header-alt:before {
-    content: "";
-    background-image: url(../img/cover.jpg);
-    position: absolute;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    opacity: .7;
+    &:before {
+        content: "";
+        background-image: url(../img/cover.jpg);
+        position: absolute;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .7;
+    }
 }
 
 .contenido-header-alt {
@@ -47,6 +45,9 @@
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    img {
+        width: 25%;
+    }
 }
 
 .contenido-header {
@@ -55,10 +56,6 @@
     position: fixed;
     width: 100%;
     z-index: 1;
-}
-
-.contenedor-header a img {
-    width: 25%;
 }
 
 .menu {
@@ -94,11 +91,7 @@
 .contenido-intro {
     color: rgb(231, 228, 224);
     background-color: rgba(0, 0, 0, 0.639);
-    padding: 50px;
     text-align: center;
-}
-
-.contenido-intro {
     font-size: 1rem;
     padding: 60px;
 }
@@ -110,11 +103,10 @@
     margin: 0 auto;
     font-size: 7vw;
     padding: 50px;
-}
-
-.nombre-sitio a {
-    text-decoration: none;
-    color: #131a1f;
+    a {
+        text-decoration: none;
+        color: #131a1f;
+    }
 }
 
 .slogan {
@@ -123,10 +115,9 @@
     font-size: 3vw;
     text-align: center;
     margin: 0 auto;
-}
-
-.slogan span {
-    font-weight: bold;
+    span {
+        font-weight: bold;
+    }
 }
 
 
