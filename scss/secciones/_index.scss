@@ -1,9 +1,7 @@
 /* INDEX SECCION SERVICIOS */
 
 .titulo {
-    text-align: center;
-    font-size: 5rem;
-    padding: 20px;
+    @extend %titulo;
 }
 
 .linea {

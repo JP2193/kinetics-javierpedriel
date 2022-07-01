@@ -21,14 +21,7 @@ legend {
 }
 
 .boton {
-    margin-top: 60px;
-    width: 20%;
-    background-color: #232f36;
-    padding: 15px;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 5px;
+    @include boton-formulario;
 }
 
 .datos-contacto {

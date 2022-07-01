@@ -7,12 +7,12 @@
 .margintop {
   margin-top: 20px; }
 
-/* INDEX SECCION SERVICIOS */
 .titulo {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   padding: 20px; }
 
+/* INDEX SECCION SERVICIOS */
 .linea {
   border-bottom: solid 10px rgba(73, 158, 214, 0.452);
   width: 80px;
